@@ -1,7 +1,7 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 carpentry: "swc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "UC Davis"        # brief name of host site without address (e.g., "Euphoric State University")
+venue: "UC Davis - DIBSI SWC Unix/Git/R in English"        # brief name of host site without address (e.g., "Euphoric State University")
 address: "Gladys Valley Hall, Davis, California, 95616"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
 country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
 language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
@@ -46,10 +46,11 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </iframe>
 {% endif %}
 
-<h4>This is the workshop template. Delete these lines and use it to customize your own website.
-If you are running a self-organized workshop or have not put in a workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know about your workshop
-and our administrator may contact you if we need any extra information.</h4>
+<h4>This is the website for the Software Carpentry Unix/Git/R workshop to be run in English at DIBSI 2018. We will be updating the content below as the date of the workshop approaches. In the mean time:</h4>
+  
+<h4>Curriculum for this workshop may be viewed here: <a href="https://software-carpentry.org/lessons">https://software-carpentry.org/lessons</a>.</h4>
+  
+<h4>Registration for this workshop may be found here: <a href="https://registration.genomecenter.ucdavis.edu/events/DIBSI_2018_SWC_Workshop">https://registration.genomecenter.ucdavis.edu/events/DIBSI_2018_SWC_Workshop</a></h4>
 
 <h2 id="general">General Information</h2>
 
@@ -212,7 +213,7 @@ and our administrator may contact you if we need any extra information.</h4>
   2' to be actual dates or days of the week.
 {% endcomment %}
 <h2 id="schedule">Schedule</h2>
-
+{% comment %}
 {% if page.carpentry == "swc" %}
   {% include sc/schedule.html %}
 {% elsif page.carpentry == "dc" %}
@@ -220,7 +221,7 @@ and our administrator may contact you if we need any extra information.</h4>
 {% elsif page.carpentry == "lc" %}
   {% include lc/schedule.html %}
 {% endif %}
-
+{% endcomment %}
 {% comment %}
   Collaborative Notes
 
@@ -257,7 +258,7 @@ and our administrator may contact you if we need any extra information.</h4>
   'tools/check' as well.
 {% endcomment %}
 <h2 id="syllabus">Syllabus</h2>
-
+{% comment %}
 {% if page.carpentry == "swc" %}
   {% include sc/syllabus.html %}
 {% elsif page.carpentry == "dc" %}
@@ -265,7 +266,7 @@ and our administrator may contact you if we need any extra information.</h4>
 {% elsif page.carpentry == "lc" %}
   {% include lc/syllabus.html %}
 {% endif %}
-
+{% endcomment %}
 <hr/>
 
 {% comment %}
@@ -292,7 +293,7 @@ and our administrator may contact you if we need any extra information.</h4>
   Library Carpentry
   {% endif %}
   workshop,
-  you will need access to the software described below.
+  you will need access to some of the software described below.
   In addition, you will need an up-to-date web browser.
 </p>
 <p>
